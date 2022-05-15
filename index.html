@@ -5,31 +5,29 @@
     <title>Evenementen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="css_onepager/style.css"/>
     <script type="text/javascript" src="Evenementen.js" defer></script>
 </head>
 
 <body>
     <header>
-        <div class="searchbar">
-            <div class="fas fa-bars"></div>
+        <section role="search">
+            <i class="fas fa-bars"></i>
             <input type="text" placeholder="Zoeken" />
-            <div class="fa fa-times"></div>
-        </div>
+            <i class="fa fa-times"></i>
+        </section>
     </header>
 
     <main>
-        <div class="maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.825568775281!2d4.500590215784475!3d51.90064727970166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c4330cfa95405d%3A0xf13a862e8f2fac33!2sAfrikaanderplein%2C%203072%20EA%20Rotterdam!5e0!3m2!1snl!2snl!4v1648476510834!5m2!1snl!2snl"
-                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.825568775281!2d4.500590215784475!3d51.90064727970166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c4330cfa95405d%3A0xf13a862e8f2fac33!2sAfrikaanderplein%2C%203072%20EA%20Rotterdam!5e0!3m2!1snl!2snl!4v1648476510834!5m2!1snl!2snl"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-        <div class="eventButtons">
+        <section class="eventButtons">
             <button class="button" type="button" id="createButton">Aanmaken</button>
             <button class="button" type="button">Evenementen</button>
-        </div>
+        </section>
 
-        <form id="create" class="create">
+        <form id="create" class="create" >
             <div class="create-bg"></div>
             <div class="create-container">
                 <label for="date" class="createLabel">Kies een datum</label>
@@ -54,8 +52,6 @@
                 <button class="create-close" id="create-close">X</button>
             </div>
         </form>
-
     </main>
 </body>
 </html>
-

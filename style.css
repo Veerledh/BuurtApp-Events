@@ -11,7 +11,7 @@ body {
     font-size: 1.5rem;
 }
 
-.searchbar {
+[role=search] {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -49,8 +49,7 @@ iframe {
     width: 100%;
     height: 100%;
 }
-
-.eventButtons {
+.CreateButton{
     align-items: center;
     justify-content: center;
     display: flex;
@@ -60,6 +59,8 @@ iframe {
     margin-left:  10px;
     margin-right:  10px;
 }
+
+
 
 .button {
     display: block;
